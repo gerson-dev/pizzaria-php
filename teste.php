@@ -9,14 +9,8 @@
     include("includes/functions.php");
     include("includes/pizzas.php");
 
-    $pizza = pizzaPorId(7);
 
-    print_r(pizzasComDestaque());
-
-
-    print_r(pizzasSemDestaque());
-
-    print_r(pizzaMaisCara());
+    print_r(buscaPizza(ca));
 
     echo "<pre>";
     print_r($pizza);

@@ -85,7 +85,16 @@
      * e retorna um array contendo todas as pizzas que contenham
      * o trecho
      */
-     function buscaPizza($trecho){}
+    function buscaPizza($trecho){
+        global $pizzas;
+        $resultado = [];
+        foreach ($pizzas as $pizza){
+            if (stripos ($pizza['nome'], $trecho) !== false){
+                $resultado[] = $pizza;
+            }
+        }
+        return $resultado;
+    }
 
      /**
      * Defina uma função que impima as informações de uma pizza
